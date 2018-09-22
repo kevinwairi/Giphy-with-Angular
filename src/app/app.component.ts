@@ -8,8 +8,9 @@ import { Http, Response } from '@angular/http';
 })
 export class AppComponent {
   title = 'Welcome to GiphySearch';
-  link = 'http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=';
+  link = 'http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=NQC4gdKdhwrm1nyQUljwrH1TlgijSpYX';
     http: Http;
+    giphies = [];
 
    constructor(http: Http) {
         this.http = http;

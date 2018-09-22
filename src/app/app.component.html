@@ -2,5 +2,6 @@
 <button (click)="performSearch(searchTerm)">Search</button>  
 <br>
 
-<input type="title" name="search" #searchTerm>
-<button (click)="performSearch(searchTerm)">Search</button>  
+<div *ngFor="let g of giphies">
+    <img src="{{g.images.original.url}}">
+</div>
